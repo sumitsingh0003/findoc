@@ -1,0 +1,63 @@
+.loginHeading {
+    text-align: center;
+}
+.loginHeading img {
+    width: 200px;
+}
+.loginHeading p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+.formField {
+    border-radius: 10px;
+    border: 2px solid #ff7700;
+    margin: 30px 20px 0px 20px;
+    overflow: hidden;
+}
+.formField input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.formButton {
+    margin: 30px 20px 10px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #ff7700;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+.frmBtn {
+    background: #ff7700;
+    width: 100%;
+    padding: 7px;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 600;
+}
+.resumeApl {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.resumeApl a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ff7700;
+    font-weight: 600;
+}
+.resumeApl a svg {
+    transform: rotate(270deg);
+    margin-top: 7px;
+}

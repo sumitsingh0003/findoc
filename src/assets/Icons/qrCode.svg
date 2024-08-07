@@ -1,0 +1,18 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 277 277" width="277" height="277">
+	<title>image</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m10 10h257v256.62h-257z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: #000000 } 
+		.s1 { fill: none;stroke: #ff7700;stroke-linecap: round;stroke-linejoin: round;stroke-width: 2;stroke-dasharray: 109 } 
+	</style>
+	<g id="Clip-Path" clip-path="url(#cp1)">
+		<g id="Layer">
+			<path id="Layer" fill-rule="evenodd" class="s0" d="m10.4 10h93.3v93h-93.3zm232.8 233.2h23.8v23.4h-23.8zm-45.7-0.1h23.8v22.4h-47.6v-45.7h23v-23.1h23.5v-46.1h23.8v22.7h22.6v23.4h-22.6v23.4h-46.5zm-70.7-46.8h23v-23.5h-22.3v-23.4h22.3v-23.4h-22.6v23.4h-23.9v-23.4h23.5v-69.6h23.8v69.6h23v23.4h22.7v-23.4h23.8v23.4h-22.6v23.4h-23.8v46.1h-23.1v46.5h-23.8zm116-70.3h23.8v23.5h-23.8zm-185.9 0h23.8v23.4h-23.8zm-46.5 0h23.8v23.4h-23.8zm116.4-116h23.8v23.4h-23.8zm-116.8 163.3h93.3v92.9h-93.3zm22.7 70.4h48v-47.8h-48zm140.6-233.6h93.3v92.9h-93.3zm22.7 70.4h48v-47.8h-48zm-163 0h48v-47.8h-48z"/>
+		</g>
+	</g>
+	<path id="Layer" class="s1" d="m1 1h275v275h-275z"/>
+</svg>

@@ -1,0 +1,23 @@
+.dashBordHead {
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.dashbordLogo {
+    width: 250px;
+    border-right: 1px solid #000;
+    padding-right: 20px;
+}
+.dashbordLogo a {
+    display: block;
+}
+.dashbordLogo a img {
+    width: 100%;
+}
+.dashbordHdrCont {
+    padding: 0px 20px;
+}
+.dashbordHdrCont p {
+    margin: 0;
+    padding: 0;
+}

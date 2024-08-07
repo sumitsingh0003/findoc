@@ -1,3 +1,28 @@
+body {
+  overflow: hidden scroll;
+}
+/* width */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #ddd; 
+}
+ 
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #ff7700bb; 
+  border-radius: 10px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }

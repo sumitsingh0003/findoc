@@ -1,0 +1,21 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 277 277" width="277" height="277">
+	<title>image</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,122,-273,0,138.5,77)">
+			<stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+			<stop offset=".2" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset=".8" stop-color="#ffffff" stop-opacity="1"/>
+			<stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+		</linearGradient>
+	</defs>
+	<style>
+		<!-- .s0 { fill: url(#g1) }  -->
+		<!-- .s1 { fill: #706f6e }  -->
+		.s2 { fill: #27803b } 
+		.s3 { fill: #e9661c } 
+	</style>
+	<path id="Layer" class="s0" d="m2 77h273v122h-273z"/>
+	<path id="Layer" fill-rule="evenodd" class="s1" d="m202.4 169.9h-12.9l18-64.8h12.9zm-6.2-58l-7.2 25.9q-0.8 2.8-3.1 4.6-2.4 1.9-5.2 1.9h-58l-7.2 25.9h-12.9l10.7-38.7h12.9v0.1h51.7l3.7-13.6h-64.5l3.5-12.7h70.9q2.9 0 4.2 1.9c0.9 1.2 1 2.8 0.5 4.7zm-101.1 53.9c-0.7 2.6-3.1 4.4-5.7 4.4h-66.6q-2.7 0-4-1.9-1.4-1.8-0.6-4.5l16.3-58.5h12.9l-14.5 52.2h51.6l14.5-52.2h12.9z"/>
+	<path id="Layer" class="s2" d="m242.7 105.2l16.3 32.5-34.3 32.4z"/>
+	<path id="Layer" class="s3" d="m231.2 105.2l16.3 32.5-34.3 32.4z"/>
+</svg>

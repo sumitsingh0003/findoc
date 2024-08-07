@@ -1,0 +1,48 @@
+.menuBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.menuBar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    border-right: 1px solid #000;
+    padding-right: 20px;
+}
+.menuBar ul li {
+    margin: 0px 15px;
+}
+.menuBar ul li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+.menuBar ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.menuBar ul li:last-child a {
+    color: #ff7700;
+}
+.menuBar ul li a svg {
+    fill: #f70;
+    width: 18px;
+}
+.menuBar button {
+    color: #ff7700;
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.menuBar button svg {
+    fill: #ff7700;
+    width: 20px;
+}

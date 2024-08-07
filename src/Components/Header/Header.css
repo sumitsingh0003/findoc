@@ -1,0 +1,59 @@
+header {
+    background: #F9F9F9;
+    padding: 20px;
+}
+.mainHeader .row {
+    justify-content: space-between;
+}
+.mainLogo a {
+    display: inline-block;
+}
+.mainLogo img {
+    width: 100%;
+}
+.searchBarSec {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+.searchInput {
+    width: 80%;
+    position: relative;
+}
+.searchInput svg {
+    width: 22px;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    cursor: pointer;
+    fill: #FF7700;
+}
+.searchInput input {
+    border: 2px solid #FF7700;
+    padding: 7px 10px;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    color: #FF7700;
+    font-size: 18px;
+}
+.searchInput input::placeholder {
+    color: #ddd;
+    font-size: 18px;
+}
+.HdrLoginBtn {
+    margin-left: 10px;
+    display: inline-block;
+}
+.HdrLoginBtn button {
+    background: #FF7700;
+    border: 2px solid #FF7700;
+    padding: 8px 40px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    display: inline-block;
+}

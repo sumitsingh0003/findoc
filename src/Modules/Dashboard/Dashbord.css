@@ -1,0 +1,902 @@
+.mainDashboard {
+    background-size: cover;
+    padding: 50px 0px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.dashBoardLeftSidebar {
+    padding: 15px 20px;
+    box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    min-height: 550px;
+    background-color: #fff;
+}
+.dashBoardLeftSidebar>span {
+    background: #e477181a;
+    display: inline-block;
+    padding: 0px 10px;
+    border-radius: 7px;
+    font-size: 12px;
+    color: #ff7700;
+    font-weight: 600;
+}
+.dashBoardLeftSidebar ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    list-style: none;
+}
+.dashBoardLeftSidebar ul li {
+    border: 2px solid #bcbcbc;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #bcbcbc;
+    color: #fff;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 75%;
+    transition: all 0.5s ease-in-out;
+}
+.dashBoardLeftSidebar ul li span {
+    line-height: 20px;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.dashBoardLeftSidebar ul li svg {
+    fill: #fff;
+    width: 30px;
+    margin-right: 5px;
+}
+.dashBoardLeftSidebar ul li.active {
+    width: 80%;
+    background: transparent;
+    color: #ff7700;
+    border: 2px solid #ff7700;
+}
+.dashBoardLeftSidebar ul li.active span {
+    font-size: 22px;
+}
+.dashBoardLeftSidebar ul li.active svg {
+    fill: #ff7700;
+}
+.dashBoardLeftSidebar ul li.completed {
+    background: #ff7700;
+    color: #fff;
+    border: 2px solid #ff7700;
+    width: 75%;
+}
+.dashBoardLeftSidebar ul li.completed svg {
+    fill: #fff;
+}
+.dashBoardRightMain{
+    padding: 15px 20px;
+    box-shadow: 0px 0px 8px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.66);
+    height: 100%;
+    overflow: hidden;
+}
+.panImage {
+    width: 300px;
+    margin: 30px auto 50px auto;
+}
+.panImage img {
+    width: 100%;
+}
+.panFormField {
+    border: 1px solid #ff7700;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.panNumbr label {
+    font-size: 20px;
+    color: #6FC777;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.panFormField input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.dob {
+    /* text-align: right; */
+    padding-left: 80px;
+}
+.dob label {
+    font-size: 20px; 
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.dob label span{
+    font-size: 14px; 
+    display: inline-block; 
+    font-weight: 500;
+}
+.dobFormField {
+    display: flex;
+    font-size: 20px;
+    color: #ddd;
+    font-weight: 600;
+    overflow: hidden;
+    align-items: center;
+}
+.dobFormField input {
+    width: 50px;
+    text-align: center;
+    outline: none;
+    border: 1px solid #ff7700;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 16px;
+    margin: 0px 10px;
+}
+.dobFormField input:first-child {
+    margin-left: 0;
+}
+.dobFormField input:last-child {
+    width: 150px;
+}
+.acceptTick {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+}
+.panFormButton {
+    text-align: center;
+    margin-top: 30px;
+}
+.panFormButton .panFrmBtn {
+    text-align: center;
+    background: #ddd;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    padding: 7px 40px;
+    border-radius: 10px;
+}
+.panFormButton .panFrmBtn svg {
+    fill: #fff;
+    width: 20px;
+}
+.panFormButton.enabled .panFrmBtn {
+    background: #ff7700;
+}
+
+.mainDashboard:after {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: #ff7700;
+    position: absolute;
+    top: -20%;
+    border-radius: 100%;
+    z-index: -1;
+    left: -20%;
+    transition: all 0.5s ease-in-out;
+}
+.mainDashboard.onload:after {
+    left: 30%;
+    top: 25%;
+}
+.mainDashboard:before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: #ff7700;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 100%;
+    z-index: -1;
+    right: -20%;
+    transition: all 0.5s ease-in-out;
+}
+.mainDashboard.onload:before {
+    right: -3%; 
+}
+.acceptTick label svg {
+    fill: #ddd;
+    width: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.acceptTick label input {
+    position: absolute;
+    width: 20px;
+    opacity: 0;
+    height: 20px;
+    cursor: pointer;
+}
+.acceptTick label.enabled svg {
+    fill: #ff7700;
+}
+
+.fetchDetailsGif {
+    width: 300px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.fetchDetailsGif img {
+    width: 100%;
+}
+.fetchDetailsGif p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #999;
+}
+.panUserView {
+    padding: 50px;
+}
+.userPanInfo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.panUserImg {
+    width: 250px;
+    box-shadow: -5px 5px 0px 4px rgba(153, 153, 153, 1);
+    border: 2px solid #000;
+    border-radius: 100%;
+    /* overflow: hidden; */
+    height: 250px;
+}
+.panUserImg img {
+    width: 100%;
+    object-fit: contain;
+}
+.panUserInfoCont {
+    padding: 0px 20px;
+}
+.panUserInfoCont p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.panUserInfoCont h3 {
+    color: #ff7700;
+    margin: 0px 0px 15px 0px;
+}
+.panUser .acceptTick {
+    font-size: 16px;
+}
+.digiLockerSec {
+    text-align: center;
+    padding: 10px;
+}
+.digiLockerImg {
+    width: 200px;
+    margin: 0 auto;
+}
+.digiLockerImg img {
+    width: 100%;
+}
+.digiLockrCntnt {
+    padding: 20px 30px;
+    margin: 0 auto;
+    text-align: left;
+    width: 80%;
+}
+.digiLockrCntnt h3 {
+    font-size: 20px;
+    color: #ff7700;
+    font-weight: 600;
+}
+.digiLockrCntnt ul {
+    margin: 0;
+    padding-left: 25px;
+}
+.digiLockrCntnt ul li {
+    font-size: 16px;
+    line-height: 30px;
+    color: #868383;
+}
+.digiLockrCntnt ul li::marker {
+    color: #868383;
+}
+.digiLockerSec .acceptTick {
+    text-align: center;
+    font-size: 12px;
+    width: 90%;
+    margin: 20px auto;
+}
+.acceptTick svg {
+    fill: #ff7700;
+    width: 16px;
+}
+.adharDetails {
+    height: 100%;
+}
+.adharDetails .panUserView {
+    height: 100%;
+}
+.adharDetails .row {
+    align-items: center;
+    height: 100%;
+}
+.adharDetails .panUserImg {
+    width: 350px;
+    box-shadow: none;
+    border: none;
+    height: unset;
+}
+.adharDetails .acceptTick img {
+    width: 100px;
+}
+
+.prsnlDetailsSec .row .col-md-6:first-child {
+    border-right: 1px solid #898989;
+}
+.chooseSeg {
+    padding: 0px 10px;
+}
+.chooseSeg p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color:#898989;
+}
+.chooseSeg ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.chooseSeg ul li {
+    margin-bottom: 15px;
+}
+.chooseSeg ul li:last-child {
+    margin-bottom: 0;
+}
+.chooseSeg ul li label {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ff7700;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.chooseSeg ul li label svg {
+    width: 20px;
+    fill: none;
+    border: 2px solid #ff7700;
+    height: 20px;
+    border-radius: 3px;
+}
+.chooseSeg ul li label input {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    opacity: 0;
+}
+.chooseSeg ul li label svg.active {
+    fill: #ff7700;
+    border: none;
+}
+.chooseSeg ul li label b {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: 0px;
+}
+.chooseSeg ul li label span {
+    display: block;
+    font-size: 12px;
+    color: #898989;
+}
+.chckBxCont {
+    margin-left: 10px;
+}
+.chooseSeg ul li label span {
+    display: block;
+    font-size: 12px;
+    color: #898989;
+    margin-top: -2px;
+}
+.prsnlDetailsForm {
+    padding: 0px 10px;
+}
+.prsnlForm-field {
+    margin-top: 20px;
+}
+.prsnlForm-field label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #898989;
+}
+.prsnlForm-field input {
+    border: 1px solid #ff7700;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;   
+    font-size: 18px;
+    color: #ff7700;
+
+}
+.prsnlForm-field input::placeholder {
+    color: #ddd;
+}
+.prsnlDetailsForm .prsnlForm-field:first-child {
+    margin-top: 0;
+}
+.prsnlDetailsSec .acceptTick {
+    margin-top: 20px;
+}
+.prsnlDetailsSec .panFormButton {
+    margin-top: 20px !important;
+}
+.chooseGndr {
+    display: flex;
+}
+.gender {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gender span {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #898989;
+}
+.gender label {
+    width: 80px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.gender label.selected {
+    background: #ff7700;
+    color: #fff;
+    border: 1px solid #ff7700;
+}
+
+.gender label input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.maritalStatus {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.maritalStatus span {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #898989;
+}
+.maritalStatus label {
+    width: 80px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.maritalStatus label.selected {
+    background: #ff7700;
+    color: #fff;
+    border: 1px solid #ff7700;
+}
+.maritalStatus label input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 9;
+}
+.qrCodeUpi {
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+.qrCodeUpi img {
+    width: 100%;
+}
+.verification-option {
+    position: relative;
+    border: 1px solid #ff7700;
+    border-radius: 10px;
+    padding: 10px;
+}
+.option-header {
+    display: flex;
+}
+.option-header label {
+    border: 1px solid #ff7700;
+    border-radius: 50px;
+    width: 30px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.option-header p {
+    font-size: 16px;
+    margin-left: 6px;
+}
+.option-header input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+span.radio-circle {
+    background: #493e3500;
+    width: 17px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.verification-option .selected .radio-circle {
+    background: #ff7700;
+}
+.option-body {
+    text-align: center;
+    margin: 20px 0px;
+}
+.option-body p {
+    font-size: 12px;
+    margin: 20px 10px 0px 10px;
+    text-align: left;
+}
+.option-body.bankopt {
+    margin-bottom: 0;
+}
+.bankIcon {
+    width: 130px;
+    margin: 0 auto;
+}
+.bankIcon img {
+    width: 100%;
+}
+.findIfscCodeInpt {
+    margin-top: 15px;
+}
+.findIfscCodeInpt label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #898989;
+}
+.findIfscCodeInpt input {
+    border: 1px solid #ff7700;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+}
+.option-body button {
+    background: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    color: #ff7700;
+    margin-top: 20px;
+}
+.option-body button svg {
+    fill: #ff7700;
+    width: 20px;
+}
+.slctBnkHdng {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.slctBnkHdng h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: #ff7700;
+}
+img.minUpi {
+    position: absolute;
+    width: 50px;
+    top: -20px;
+    left: 40%;
+}
+.selectBankButon {
+    margin-top: 20px;
+    text-align: center;
+}
+.selectBankButon button {
+    background: #ff7700;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 7px 50px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #ff7700;
+}
+.selectBankButon button svg {
+    fill: #fff;
+    width: 20px;
+}
+.selectBankButon p {
+    margin: 0;
+}
+.selectBankButon p svg {
+    width: 15px;
+    fill: #FF7700 !important;
+}
+.selectBankButon p svg .s0 {
+    fill: #ff7700;
+}
+.selectBankButon.disabled button {
+    background: #ddd;
+    border: 1px solid #ddd;
+}
+.bankInnerSec {
+    width: 40%;
+    margin: 0 auto;
+}
+.mainAdBnkDetls {
+    border: 1px solid #ff7700;
+    border-radius: 10px;
+}
+.bankLogoSec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+}
+ 
+.bankLogoMiniImg img {
+    width: 100%;
+}
+.bankLogoMiniImg {
+    width: 80px;
+    border: 2px solid #ff7700;
+    border-radius: 100%;
+    padding: 15px;
+    height: 80px;
+    margin-right: 20px;
+}
+.bnkLogoHdng h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+.bnkLogoHdng p {
+    font-size: 14px;
+    color: #898989;
+    margin: 0;
+}
+.addBnkNmr span input[type="checkbox"] {
+    width: 20px;
+    position: absolute;
+    left: 29%;
+    height: 30px;
+    opacity: 0;
+}
+ 
+.addBnkNmr {
+    margin-bottom: 20px;
+}
+.addBnkNmr label {
+    font-size: 14px;
+    display: block;
+    color: #209E49;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.addBnkNmr input {
+    width: 100%;
+    border: 1px solid #209E49;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+.addBnkNmr span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.bankInnerSec p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.bankInnerSec p button {
+    background: transparent;
+    border: none;
+    color: #ff7700;
+    font-weight: 600;
+    padding: 0;
+    margin-left: 4px;
+    font-size: 16px;
+}
+.bankInnerSec p button svg {
+    fill: #ff7700;
+    width: 20px;
+}
+.bankIfscHdng {
+    margin: 10px 0px 20px 0px;
+}
+.bankIfscHdng h2 {
+    font-size: 22px; 
+}
+.verifyingSec {
+    text-align: center;
+    padding: 20px 0px;
+}
+.icons-container {
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span.rupee {
+    font-size: 122px;
+    font-weight: 900;
+    line-height: 60px;
+    display: inline-block;
+    margin: 0px 15px;
+    color: #ff7700;
+    padding: 0;
+}
+.icons-container img {
+    width: 100px;
+}
+.verifyDetails {
+    display: block;
+    padding: 50px 0px 30px 0px;
+}
+.verifyDetails h3 {
+    font-size: 16px;
+}
+.verifyDetails p {
+    font-size: 14px;
+}
+.timer-container img {
+    width: 50px;
+}
+p.waiting-message {
+    margin: 0;
+}
+img.arrowImgIcn {
+    width: 60px;
+}
+.addBnkNmr span svg {
+    width: 20px;
+    fill: #fff;
+    border: 2px solid #ff7700;
+    height: 20px;
+    background: #ff7700;
+    margin-right: 10px;
+}
+.addBnkNmr span svg.active {
+    fill: #ff7700;
+    background: #ffffff;
+    border: none;
+}
+.pymntfailedSec {
+    padding: 50px 0px;
+}
+.veryfUnscsfl {
+    border-radius: 10px;
+    padding: 30px 20px;
+    /* border: 1px solid #ff7700; */
+    text-align: center;
+}
+.failedBank {
+    width: 180px;
+    margin: 0 auto;
+}
+.failedBank img {
+    width: 100%;
+}
+.veryfUnscsfl h2 {
+    font-size: 22px;
+    color: #ff7700;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.veryfUnscsfl p {
+    font-size: 14px;
+    text-align: left;
+}
+.veryfUnscsfl button {
+    background: #ff7700;
+    border: 1px solid #ff7700;
+    padding: 7px 40px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    outline: none;
+}
+.veryfUnscsfl button svg {
+    fill: #fff;
+    width: 20px;
+}
+.veryFailedQrCode {
+    border: 1px solid #ff7700;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.veryFailedQrCode .option-header p {
+    font-size: 16px;
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+.failedPymnt .qrCodeUpi {
+    width: 250px;
+}
+
+
+.succsessfull {
+    padding: 60px;
+    text-align: center;
+}
+.succBank {
+    width: 150px;
+    margin: 30px auto;
+}
+.succBank img {
+    width: 100%;
+}
+.succsessfull h2 {
+    font-size: 26px;
+    color: #57bb6a;
+}
+.succsessfull p {
+    color: #868383;
+}
+.scccBtn {
+    margin-top: 40px;
+}
+
+
+.options label {
+    margin-bottom: 10px;
+    border: 2px solid #f70;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
