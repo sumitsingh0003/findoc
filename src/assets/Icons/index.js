@@ -16,3 +16,4 @@ export { ReactComponent as UPIIcon } from './UPI.svg';
 export { ReactComponent as QrCode } from './qrCode.svg';
 export { ReactComponent as BigUpi } from './bigUpi.svg';
 export { ReactComponent as MinUpi } from './minUpi.svg';
+export { ReactComponent as UploadIcon } from './upload.svg';

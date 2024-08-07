@@ -889,7 +889,11 @@ img.arrowImgIcn {
     margin-top: 40px;
 }
 
-
+.upldStatementContent ul {
+    padding-left: 40px;
+    color: #999;
+    font-size: 14px;
+}
 .options label {
     margin-bottom: 10px;
     border: 2px solid #f70;
@@ -899,4 +903,15 @@ img.arrowImgIcn {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.upldStatmntBtn {
+    background: #f70;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 7px 40px;
+}
+.upldStatmntBtn svg {
+    width: 16px;
+    margin-right: 5px;
 }

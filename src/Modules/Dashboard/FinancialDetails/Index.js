@@ -1,4 +1,5 @@
-import {React, useState} from 'react'
+import { React, useState } from 'react'
+import { UploadIcon } from '../../../assets/Icons/index';
 
 const Index = () => {
   const [selectedOption, setSelectedOption] = useState('');
@@ -68,25 +69,32 @@ const Index = () => {
 
       <div className="document-upload">
 
-      <div className="options">
-        {options.map(option => (
-          <label key={option.value} className='option-label'>
-            <div className='upldStatementContent'>
-              <input
-                type="radio"
-                value={option.value}
-                checked={selectedOption === option.value}
-                onChange={handleOptionChange}
-              />
-              <span>{option.label}</span>
-              {selectedOption === option.value && (
-                <>
-                  <ul>
-                    {option.instructions.map((instruction, index) => (
-                      <li key={index}>{instruction}</li>
-                    ))}
-                  </ul>
-                  <div className='upldStatementBtn'>
+        <div className="options">
+          {options.map(option => (
+            <label key={option.value} className='option-label'>
+              <div className='upldStatementContent'>
+                <input
+                  type="radio"
+                  value={option.value}
+                  checked={selectedOption === option.value}
+                  onChange={handleOptionChange}
+                />
+                <span>{option.label}</span>
+                {selectedOption === option.value && (
+                  <>
+                    <ul>
+                      {option.instructions.map((instruction, index) => (
+                        <li key={index}>{instruction}</li>
+                      ))}
+                    </ul>
+
+                  </>
+                )}
+
+              </div>
+              <div className='uploadStatementBtn'>
+                {selectedOption === option.value && (
+                  <>
                     <input
                       type="file"
                       id={`file-upload-${option.value}`}
@@ -94,25 +102,24 @@ const Index = () => {
                       accept=".jpg,.jpeg,.png,.heic,.pdf,.doc"
                       onChange={handleFileChange}
                     />
-                    <label htmlFor={`file-upload-${option.value}`}>
-                      <button>{file ? file.name : 'Upload ' + option.label}</button>
+                    <label htmlFor={`file-upload-${option.value}`} className='upldStatmntBtn'>
+                      <UploadIcon /> {file ? file.name : option.label}
                     </label>
-                  </div>
-                </>
-              )}
-            </div>
-          </label>
-        ))}
-      </div>
-      {file && (
-        <div className="file-info">
-          <p>Selected file: {file.name}</p>
+                  </>
+                )}
+              </div>
+            </label>
+          ))}
         </div>
-      )}
-      <p className="note">
-        As per SEBI & Exchange regulations, you are required to share your proof of income to enable trading in Futures & Options segment.
-      </p>
-    </div>
+        {file && (
+          <div className="file-info">
+            <p>Selected file: {file.name}</p>
+          </div>
+        )}
+        <p className="note">
+          As per SEBI & Exchange regulations, you are required to share your proof of income to enable trading in Futures & Options segment.
+        </p>
+      </div>
     </>
   )
 }
